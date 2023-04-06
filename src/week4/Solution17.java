@@ -8,6 +8,9 @@ public class Solution17 {
         if(unit.equals("C")) {
         	converted = (int)(value*1.8)+32;
         }
+        else if(unit.equals("F")) {
+        	converted = (int)((value-32)/1.8);
+        }
         	
         return converted;
     }
