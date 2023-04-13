@@ -32,7 +32,7 @@ public class Solution21 {
         int answer = func_c(scores ,n);
         return answer;
     }
-    // 아래는 테스트케이스 출력을 해보기 위한 main 메소드입니다.
+    
     public static void main(String[] args) {
         Solution21 sol = new Solution21();
         int[] scores = {20, 60, 98, 59};
@@ -40,7 +40,6 @@ public class Solution21 {
         int ret = sol.solution(scores, n);
 
 
-        // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
         System.out.println("solution 메소드의 반환 값은 " + ret + " 입니다.");
     }
 }
