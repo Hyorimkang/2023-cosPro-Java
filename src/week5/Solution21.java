@@ -24,7 +24,7 @@ public class Solution21 {
     }
     
     int func_c(int[] arr, int n){
-        return arr[n];
+        return arr[n-1];
     }
     public int solution(int[] scores, int n) {
         int score = func_a(scores, n);
