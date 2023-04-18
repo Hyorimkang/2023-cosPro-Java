@@ -5,10 +5,16 @@ import java.util.Arrays;
 public class Solution21_1 {
 	public int[] solution(int[] scores) {
 		int rank[] = new int[4];
-		int num=1;
-		for(int i =0; i<scores.length; i++) {
-			rank[i] = num;
-			num++;
+		
+		for(int i = 0; i<scores.length; i++) {
+			rank[i] = 1;
+		}
+		for(int i = 0; i<scores.length; i++) {
+			for(int j = 0; j<scores.length; j++) {
+				if(scores[i]<scores[j]) {
+					rank[i]++;
+				}
+			}
 		}
 		return rank;
 	}
